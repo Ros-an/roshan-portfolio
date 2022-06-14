@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar } from "./components";
 import { About, Blogs, Footer, Header, Skills, Work } from "./container";
+import "./App.scss";
 
 function App() {
   return (
