@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar } from "./components";
-import { About, Blogs, Footer, Header, Skills, Work } from "./container";
+import { Blogs, Footer, Header, Skills, Work } from "./container";
 import "./App.scss";
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <main className="app">
       <Navbar />
       <Header />
-      <About />
+      {/* <About /> */}
       <Work />
       <Skills />
       <Blogs />
