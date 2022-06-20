@@ -1,22 +1,36 @@
 import React from "react";
-import { BsTwitter, BsInstagram } from "react-icons/bs";
-import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
+import { BsTwitter } from "react-icons/bs";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
-const SocialMedia = () => (
-  <div className="app__social">
-    <div>
-      <AiFillGithub />
+const SocialMedia = () => {
+  const handleSocialRedirect = (link: string) => {
+    window.open(
+      link,
+      "_blank" // <- This is what makes it open in a new window.
+    );
+  };
+  return (
+    <div className="app__social">
+      <div onClick={() => handleSocialRedirect("https://github.com/Ros-an")}>
+        <AiFillGithub />
+      </div>
+      <div
+        onClick={() =>
+          handleSocialRedirect(
+            "https://www.linkedin.com/in/roshan-kr-mahato-798592171/"
+          )
+        }
+      >
+        <AiFillLinkedin />
+      </div>
+      <div onClick={() => handleSocialRedirect("https://twitter.com/rosan_kr")}>
+        <BsTwitter />
+      </div>
+      {/* <div onClick={() => handleSocialRedirect()}>
+        <AiOutlineMail />
+      </div> */}
     </div>
-    <div>
-      <AiFillLinkedin />
-    </div>
-    <div>
-      <BsTwitter />
-    </div>
-    <div>
-      <AiOutlineMail />
-    </div>
-  </div>
-);
+  );
+};
 
 export default SocialMedia;

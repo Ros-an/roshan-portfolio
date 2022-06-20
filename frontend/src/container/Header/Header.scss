@@ -80,7 +80,22 @@
         text-align: right;
       }
     }
-  
+  .tag-cmp.user__resume {
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    & a {
+      height: 3rem;
+      width: 3rem;
+    }
+    img {
+      height: 100%;
+      width: 100%;
+    }
+    // img {
+    //   height: ;
+    // }
+  }
     span {
       font-size: 2.5rem;
   

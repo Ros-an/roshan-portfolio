@@ -37,6 +37,14 @@ function Header() {
             <p className="p-text">Web Developer</p>
             {/* <p className="p-text">Freelancer</p> */}
           </div>
+          <div>
+            <div className="tag-cmp app__flex user__resume">
+              <a href="roshankrmahato.pdf" download target="_blank">
+                <img src={images.resumeIcon} alt="resume" />
+              </a>
+            </div>
+            <p style={{ textAlign: "center" }}>Resume</p>
+          </div>
         </div>
       </motion.div>
 

@@ -31,6 +31,7 @@ import profile3 from '../assets/profile3.png';
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
 import wave from "../assets/wave.gif";
+import resumeIcon from '../assets/resume-cv.svg';
 
 import adidas from '../assets/adidas.png';
 import amazon from '../assets/amazon.png';
@@ -45,6 +46,7 @@ const images = {
   mobile,
   api,
   cpp,
+  resumeIcon,
   css,
   wave,
   figma,
