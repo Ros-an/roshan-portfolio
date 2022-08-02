@@ -27,8 +27,6 @@ const Work = () => {
     const query = '*[_type == "blogs"]';
 
     client.fetch(query).then((data) => {
-      console.log("blogs", data);
-
       setBlogs(data);
       setFilterBlog(data);
     });

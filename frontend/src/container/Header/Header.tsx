@@ -39,7 +39,7 @@ function Header() {
           </div>
           <div>
             <div className="tag-cmp app__flex user__resume">
-              <a href="roshankrmahato.pdf" download target="_blank">
+              <a href="roshankr.pdf" target="_blank">
                 <img src={images.resumeIcon} alt="resume" />
               </a>
             </div>
